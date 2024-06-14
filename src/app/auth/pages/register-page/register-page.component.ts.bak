@@ -29,7 +29,7 @@ export class RegisterPageComponent {
     password2: [ '', [ Validators.required ] ]
   }, {
     // Estas funciones aca en el objeto Validators, pasan como argumento implicito en todo el formulario
-    validators: [
+    Validators: [
       this.validatorsService.isFieldOneEqualFieldTwo( 'password', 'password2' )
     ]
   });
